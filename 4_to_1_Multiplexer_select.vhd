@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity and_gate_select is    --entity declaration 
+entity mux_select is    --entity declaration 
 port(
 
 A_in : in std_logic ;
@@ -16,7 +16,7 @@ Y_out : out std_logic
 
 end entity ;
 
-architecture dataflow of and_gate_select is 
+architecture dataflow of mux_select is 
 signal select_line : std_logic_vector (1 downto 0); --signal decleration
 begin
 select_line <= Sel ;
@@ -29,4 +29,5 @@ end architecture ;
 
 						 
 						 
+
 						 
