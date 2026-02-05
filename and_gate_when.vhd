@@ -12,8 +12,9 @@ end entity;
 architecture dataflow of and_gate_using_when is
 begin 
 
-Y <= '1' when A ='1' and B = '1'else
-     '0' when A /= B or A = '0' or B = '0' else
-     'Z' ;
+Y <= B when A = '1' else
+     '0' ;
+      
 
 end architecture; 
+
